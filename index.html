@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Estilo-->
+    <link rel="stylesheet" href="index.css">
+
+    <!-- Fonte - Architects Daughter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap" rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+
+
+    <title>Conversor de unidades</title>
+</head>
+
+<body>
+    <div class="conversor">
+        <h1>Conversor de unidades</h1>
+
+        <form>
+            <label for="input">Digite a quantidade:</label>
+            <input type="number" name="input" id="input" placeholder="0">
+        </form>
+
+        <form>
+            <label for="from">De:</label>
+            <select name="from" id="from">
+                <option value="meters">Metro(s)</option>
+                <option value="kilometers">Quilômetro(s)</option>
+                <option value="centimeters">Centímetro(s)</option>
+                <option value="millimeter">Milímetro(s)</option>
+            </select>
+        </form>
+
+        <form>
+            <label for="to">Para:</label>
+            <select name="to" id="to">
+                <option value="meters">Metro(s)</option>
+                <option value="kilometers">Quilômetro(s)</option>
+                <option value="centimeters">Centímetro(s)</option>
+                <option value="millimeter">Milímetro(s)</option>
+            </select>
+        </form>
+
+        <button>Converter ></button>
+
+        <form class="form-resultado">
+            <label for="output">Resultado:</label>
+            <span class="resultado" id="resultado"></span>
+        </form>
+
+    </div>
+
+    <!-- Javascript -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
